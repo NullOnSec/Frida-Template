@@ -51,7 +51,6 @@ Interceptor.attach(pCreateProcessA, {
 		if (this.application == null) {
 			this.application = "cmd.exe";
 		}
-		if (this.commandline.includes("ooooooooooooooo")) args[1].writeUtf8String(" ");
 	},
 	onLeave: function(retval) {
 		send( {
